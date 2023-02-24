@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.todo_list_container{
+    min-height: 100vh;
+   flex-wrap: wrap;
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+    
+
+}
+.list_of_task_container{
+    flex: 1 1;
+    padding:  20px 0;
+    min-width: none;height: 90vh;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.add_task_container{
+    flex: 1 1;
+    min-width: 250px;
+    width: 100%;
+    min-height: 100%;
+}
+.add_task_container textarea{
+    color: black;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    border: none;
+    text-align: left;
+    flex: 1;
+     width:  100%;
+    min-height: 100%
+}
+input{
+    accent-color: black;
+}
+textarea:focus{
+    outline-color: red;
+
+}
+.task_itms{
+    display: flex;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+.unchecked{
+    text-decoration: none;
+}
+.task_options{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+  
+
+}
+.task_options *{
+    cursor: pointer;
+    margin-right: 20px;
+    text-decoration: red;
+}
